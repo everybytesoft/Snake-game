@@ -70,8 +70,8 @@ class Savior():
                 and self.savior_head_pos[1] == criminal_pos[1]):
             # если съели еду то задаем новое положение еды случайным образом
             # и увеличивем score на один
-            criminal_pos = [random.randrange(1, screen_width / 10) * 10,
-                            random.randrange(1, screen_height / 10) * 10]
+            criminal_pos = [random.randrange(1, screen_width // 10) * 10,
+                            random.randrange(1, screen_height // 10) * 10]
             score += 1
         self.savior_body.pop()
         return score, criminal_pos
